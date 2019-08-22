@@ -961,6 +961,7 @@ const InstabugModule = {
     emailFieldHint: Instabug.emailFieldHint,
     commentFieldHintForBugReport: Instabug.commentFieldHintForBugReport,
     commentFieldHintForFeedback: Instabug.commentFieldHintForFeedback,
+    commentFieldHintForQuestion: Instabug.commentFieldHintForQuestion,
     addVideoMessage: Instabug.addVideoMessage,
     addVoiceMessage: Instabug.addVoiceMessage,
     addImageFromGallery: Instabug.addImageFromGallery,

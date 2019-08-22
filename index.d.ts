@@ -328,6 +328,7 @@ export enum strings {
   emailFieldHint,
   commentFieldHintForBugReport,
   commentFieldHintForFeedback,
+  commentFieldHintForQuestion,
   addVideoMessage,
   addVoiceMessage,
   addImageFromGallery,
