@@ -27,8 +27,6 @@
 
 - (void)setFloatingButtonEdge:(CGRectEdge)floatingButtonEdge withTopOffset:(double)floatingButtonOffsetFromTop;
 
-- (void)invokeWithInvocationModeAndOptions:(IBGInvocationMode)invocationMode options:(NSArray *)options;
-
 - (void)setOnInvokeHandler:(RCTResponseSenderBlock)callBack;
 
 - (void)setOnSDKDismissedHandler:(RCTResponseSenderBlock)callBack;

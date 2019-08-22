@@ -67,36 +67,6 @@ public class RNInstabugBugReportingModule extends ReactContextBaseJavaModule {
     }
 
     /**
-     * @deprecated
-     * invoke sdk manually with desire invocation mode
-     *
-     * @param invocationMode the invocation mode
-     * @param invocationOptions the array of invocation options
-     */
-    @SuppressLint("WrongConstant")
-    @ReactMethod
-    public void invokeWithInvocationModeAndOptions(String invocationMode, ReadableArray invocationOptions) {
-
-
-        InvocationMode mode = ArgsRegistry.getDeserializedValue(invocationMode, InvocationMode.class);
-
-
-        Object[] objectArray = ArrayUtil.toArray(invocationOptions);
-        String[] stringArray = Arrays.copyOf(objectArray, objectArray.length, String[].class);
-
-        int[] arrayOfParsedOptions = new int[stringArray.length];
-        int i = 0;
-        for (String option : stringArray) {
-            arrayOfParsedOptions[i++] = ArgsRegistry.getDeserializedValue(option, int.class);
-        }
-        try {
-            BugReporting.invoke(mode, arrayOfParsedOptions);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-
-    /**
      * Enable/Disable screen recording
      *
      * @param autoScreenRecordingEnabled boolean for enable/disable

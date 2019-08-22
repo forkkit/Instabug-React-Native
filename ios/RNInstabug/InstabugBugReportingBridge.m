@@ -205,16 +205,6 @@ RCT_EXPORT_METHOD(show:(IBGBugReportingReportType)type options:(NSArray*) option
     }];
 }
 
-RCT_EXPORT_METHOD(invokeWithInvocationModeAndOptions:(IBGInvocationMode)invocationMode options:(NSArray*)options) {
-    [[NSRunLoop mainRunLoop] performBlock:^{
-        IBGBugReportingInvocationOption invocationOptions = 0;
-        for (NSNumber *boxedValue in options) {
-            invocationOptions |= [boxedValue intValue];
-        }
-        [IBGBugReporting invokeWithMode:invocationMode options:invocationOptions];
-    }];
-}
-
 RCT_EXPORT_METHOD(setShakingThresholdForiPhone:(double)iPhoneShakingThreshold) {
     IBGBugReporting.shakingThresholdForiPhone = iPhoneShakingThreshold;
 }

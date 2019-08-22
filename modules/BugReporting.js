@@ -50,30 +50,6 @@ export default {
     IBGBugReporting.setOptions(options);
   },
 
-  /* istanbul ignore next */
-  /**
-   * @deprecated
-   * Invokes the SDK with a specific mode.
-   * Invokes the SDK and show a specific view, instead of showing a prompt for
-   * users to choose from.
-   * @param {invocationMode} invocationMode Specifies which mode the
-   * SDK is going to start with.
-   * @param {invocationOptions} invocationOptions Specifies which mode the
-   * SDK is going to start with.
-   */
-  invokeWithInvocationModeAndOptions(
-    invocationMode,
-    invocationOptions
-  ) {
-    if (!invocationOptions) {
-      invocationOptions = [];
-    }
-    Instabug.invokeWithInvocationModeAndOptions(
-      invocationMode,
-      invocationOptions
-    );
-  },
-
   /**
    * Sets a block of code to be executed just before the SDK's UI is presented.
    * This block is executed on the UI thread. Could be used for performing any

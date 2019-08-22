@@ -59,26 +59,6 @@
   XCTAssertEqual(IBGBugReporting.bugReportingOptions, invocationOptions);
 }
 
-- (void) testgivenInvocationModeAndOptiond$invokeWithModeOptions_whenQuery_thenShouldCallNativeApiWithArgs {
-  NSArray *invocationOptionsArr = [NSArray arrayWithObjects:  @(IBGBugReportingInvocationOptionEmailFieldHidden), nil];
-  IBGBugReportingInvocationOption invocationOptions = 0;
-  for (NSNumber *boxedValue in invocationOptionsArr) {
-    invocationOptions |= [boxedValue intValue];
-  }
-  IBGInvocationMode invocationMode = IBGInvocationModeNewBug;
-  id mock = OCMClassMock([IBGBugReporting class]);
-  OCMStub([mock invokeWithMode:invocationMode options:invocationOptions]);
-  [self.instabugBridge invokeWithInvocationModeAndOptions:invocationMode options:invocationOptionsArr];
-  XCTestExpectation *expectation = [self expectationWithDescription:@"Test ME PLX"];
-  
-  [[NSRunLoop mainRunLoop] performBlock:^{
-    OCMVerify([mock invokeWithMode:invocationMode options:invocationOptions]);
-    [expectation fulfill];
-  }];
-  
-  [self waitForExpectationsWithTimeout:EXPECTATION_TIMEOUT handler:nil];
-}
-
 - (void) testgivenHandler$setOnInvokeHandler_whenQuery_thenShouldCallNativeApi {
   id partialMock = OCMPartialMock(self.instabugBridge);
   RCTResponseSenderBlock callback = ^(NSArray *response) {};

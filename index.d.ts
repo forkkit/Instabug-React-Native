@@ -7,10 +7,6 @@ export namespace BugReporting {
   function setEnabled(isEnabled: boolean): void;
   function setInvocationEvents(invocationEvents: invocationEvent[]): void;
   function setInvocationOptions(invocationOptions: invocationOptions[]): void;
-  function invokeWithInvocationModeAndOptions(
-    invocationMode: invocationMode,
-    invocationOptions: invocationOptions[]
-    ): void;
   function onInvokeHandler(handler: () => void): void;
   function onReportSubmitHandler(preSendingHandler: () => void): void;
   function onSDKDismissedHandler(handler: (dismiss: dismissType, report: reportType) => void): void;
