@@ -351,7 +351,8 @@ export default {
    */
   reportType: {
     bug: Instabug.bugReportingReportTypeBug,
-    feedback: Instabug.bugReportingReportTypeFeedback
+    feedback: Instabug.bugReportingReportTypeFeedback,
+    question: Instabug.bugReportingReportTypeQuestion
   },
 
   /**

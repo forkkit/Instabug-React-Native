@@ -420,6 +420,7 @@ RCT_EXPORT_METHOD(show) {
               
               @"bugReportingReportTypeBug": @(IBGBugReportingReportTypeBug),
               @"bugReportingReportTypeFeedback": @(IBGBugReportingReportTypeFeedback),
+              @"bugReportingReportTypeQuestion": @(IBGBugReportingReportTypeQuestion),
               
               @"rectMinXEdge": @(CGRectMinXEdge),
               @"rectMinYEdge": @(CGRectMinYEdge),

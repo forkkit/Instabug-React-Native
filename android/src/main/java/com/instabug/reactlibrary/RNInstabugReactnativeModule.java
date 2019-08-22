@@ -170,6 +170,7 @@ public class RNInstabugReactnativeModule extends ReactContextBaseJavaModule {
 
     private final String BUG_REPORTING_REPORT_TYPE_BUG = "bugReportingReportTypeBug";
     private final String BUG_REPORTING_REPORT_TYPE_FEEDBACK = "bugReportingReportTypeFeedback";
+    private final String BUG_REPORTING_REPORT_TYPE_QUESTION = "bugReportingReportTypeQuestion";
 
     private final String EMAIL_FIELD_HIDDEN = "emailFieldHidden";
     private final String EMAIL_FIELD_OPTIONAL = "emailFieldOptional";
@@ -2194,6 +2195,7 @@ public class RNInstabugReactnativeModule extends ReactContextBaseJavaModule {
 
         constants.put(BUG_REPORTING_REPORT_TYPE_BUG, BUG_REPORTING_REPORT_TYPE_BUG);
         constants.put(BUG_REPORTING_REPORT_TYPE_FEEDBACK, BUG_REPORTING_REPORT_TYPE_FEEDBACK);
+        constants.put(BUG_REPORTING_REPORT_TYPE_QUESTION, BUG_REPORTING_REPORT_TYPE_QUESTION);
 
         constants.put("localeArabic", LOCALE_ARABIC);
         constants.put("localeChineseSimplified", LOCALE_CHINESE_SIMPLIFIED);
