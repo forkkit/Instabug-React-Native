@@ -33,17 +33,6 @@ export default {
   /* istanbul ignore next */
   /**
    * @deprecated
-   * Invokes the SDK manually with the default invocation mode.
-   * Shows a view that asks the user whether they want to start a chat, report
-   * a problem or suggest an improvement.
-   */
-  invoke() {
-    IBGBugReporting.invoke();
-  },
-
-  /* istanbul ignore next */
-  /**
-   * @deprecated
    * Sets the invocation options.
    * Default is set by `Instabug.startWithToken`.
    * @param {invocationOptions} invocationOptions Array of invocation options

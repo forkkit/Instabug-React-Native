@@ -205,12 +205,6 @@ RCT_EXPORT_METHOD(show:(IBGBugReportingReportType)type options:(NSArray*) option
     }];
 }
 
-RCT_EXPORT_METHOD(invoke) {
-    [[NSRunLoop mainRunLoop] performBlock:^{
-        [IBGBugReporting invoke];
-    }];
-}
-
 RCT_EXPORT_METHOD(invokeWithInvocationModeAndOptions:(IBGInvocationMode)invocationMode options:(NSArray*)options) {
     [[NSRunLoop mainRunLoop] performBlock:^{
         IBGBugReportingInvocationOption invocationOptions = 0;

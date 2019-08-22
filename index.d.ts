@@ -6,7 +6,6 @@
 export namespace BugReporting {
   function setEnabled(isEnabled: boolean): void;
   function setInvocationEvents(invocationEvents: invocationEvent[]): void;
-  function invoke(): void;
   function setInvocationOptions(invocationOptions: invocationOptions[]): void;
   function invokeWithInvocationModeAndOptions(
     invocationMode: invocationMode,

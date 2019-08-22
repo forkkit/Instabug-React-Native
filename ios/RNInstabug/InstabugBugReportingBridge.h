@@ -23,8 +23,6 @@
 
 - (void)setInvocationEvents:(NSArray *)invocationEventsArray;
 
-- (void)invoke;
-
 - (void)setOptions:(NSArray *)optionsArray;
 
 - (void)setFloatingButtonEdge:(CGRectEdge)floatingButtonEdge withTopOffset:(double)floatingButtonOffsetFromTop;

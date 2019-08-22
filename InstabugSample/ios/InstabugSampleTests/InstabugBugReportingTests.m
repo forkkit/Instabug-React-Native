@@ -48,21 +48,6 @@
   XCTAssertEqual(IBGBugReporting.invocationEvents, invocationEvents);
 }
 
-- (void)testgiven$invoke_whenQuery_thenShouldCallNativeApi {
-  id mock = OCMClassMock([IBGBugReporting class]);
-  
-  OCMStub([mock invoke]);
-  [self.instabugBridge invoke];
-  XCTestExpectation *expectation = [self expectationWithDescription:@"Test ME PLX"];
-  
-  [[NSRunLoop mainRunLoop] performBlock:^{
-    OCMVerify([mock invoke]);
-    [expectation fulfill];
-  }];
-  
-  [self waitForExpectationsWithTimeout:EXPECTATION_TIMEOUT handler:nil];
-}
-
 - (void) testgivenOptions$setOptions_whenQuery_thenShouldCallNativeApiWithArgs {
   NSArray *invocationOptionsArr = [NSArray arrayWithObjects:  @(IBGBugReportingInvocationOptionEmailFieldHidden), nil];
   

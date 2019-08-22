@@ -68,25 +68,6 @@ public class RNInstabugBugReportingModule extends ReactContextBaseJavaModule {
 
     /**
      * @deprecated
-     * invoke sdk manually with mode and options
-     */
-    @ReactMethod
-    public void invoke() {
-        try {
-            Handler handler = new Handler(Looper.getMainLooper());
-            handler.post(new Runnable() {
-                @Override
-                public void run() {
-                    BugReporting.invoke();
-                }
-            });
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-
-    /**
-     * @deprecated
      * invoke sdk manually with desire invocation mode
      *
      * @param invocationMode the invocation mode
