@@ -2259,7 +2259,6 @@ public class RNInstabugReactnativeModule extends ReactContextBaseJavaModule {
         constants.put("commentFieldHintForBugReport", COMMENT_FIELD_HINT_FOR_BUG_REPORT);
         constants.put("commentFieldHintForFeedback", COMMENT_FIELD_HINT_FOR_FEEDBACK);
         constants.put("invocationHeader", INVOCATION_HEADER);
-        constants.put("talkToUs", START_CHATS);
         constants.put("startChats", START_CHATS);
         constants.put("reportBug", REPORT_BUG);
         constants.put("reportFeedback", REPORT_FEEDBACK);

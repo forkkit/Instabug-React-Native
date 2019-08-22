@@ -323,7 +323,6 @@ export enum strings {
   invalidCommentMessage,
   invalidCommentTitle,
   invocationHeader,
-  talkToUs,
   reportBug,
   reportFeedback,
   emailFieldHint,

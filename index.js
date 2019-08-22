@@ -955,7 +955,6 @@ const InstabugModule = {
     invalidCommentMessage: Instabug.invalidCommentMessage,
     invalidCommentTitle: Instabug.invalidCommentTitle,
     invocationHeader: Instabug.invocationHeader,
-    talkToUs: Instabug.talkToUs,
     startChats: Instabug.startChats,
     reportBug: Instabug.reportBug,
     reportFeedback: Instabug.reportFeedback,

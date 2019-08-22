@@ -480,7 +480,6 @@ RCT_EXPORT_METHOD(show) {
               @"invalidCommentMessage": kIBGInvalidCommentMessageStringName,
               @"invalidCommentTitle": kIBGInvalidCommentTitleStringName,
               @"invocationHeader": kIBGInvocationTitleStringName,
-              @"talkToUs": kIBGTalkToUsStringName,
               @"startChats": kIBGAskAQuestionStringName,
               @"reportBug": kIBGReportBugStringName,
               @"reportFeedback": kIBGReportFeedbackStringName,
