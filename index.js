@@ -820,7 +820,8 @@ const InstabugModule = {
    */
   reportType: {
     bug: Instabug.reportTypeBug,
-    feedback: Instabug.reportTypeFeedback
+    feedback: Instabug.reportTypeFeedback,
+    question: Instabug.reportTypeQuestion
   },
 
   /**

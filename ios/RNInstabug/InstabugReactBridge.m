@@ -411,6 +411,7 @@ RCT_EXPORT_METHOD(show) {
               
               @"reportTypeBug": @(IBGReportTypeBug),
               @"reportTypeFeedback": @(IBGReportTypeFeedback),
+              @"reportTypeQuestion": @(IBGReportTypeQuestion),
               
               @"optionEmailFieldHidden": @(IBGBugReportingOptionEmailFieldHidden),
               @"optionEmailFieldOptional": @(IBGBugReportingOptionEmailFieldOptional),

@@ -61,7 +61,8 @@ RCT_ENUM_CONVERTER(IBGExtendedBugReportMode, (@{
 
 RCT_ENUM_CONVERTER(IBGReportType, (@{
                                      @"reportTypeBug": @(IBGReportTypeBug),
-                                     @"reportTypeFeedback": @(IBGReportTypeFeedback)
+                                     @"reportTypeFeedback": @(IBGReportTypeFeedback),
+                                     @"reportTypeQuestion": @(IBGReportTypeQuestion)
                                      }), IBGReportTypeBug, integerValue);
 
 RCT_ENUM_CONVERTER(CGRectEdge, (@{
