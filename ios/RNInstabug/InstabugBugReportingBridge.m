@@ -162,23 +162,6 @@ RCT_EXPORT_METHOD(setEnabledAttachmentTypes:(BOOL)screenShot
     IBGBugReporting.enabledAttachmentTypes = attachmentTypes;
 }
 
-RCT_EXPORT_METHOD(setPromptOptionsEnabled:(BOOL)chatEnabled
-                  feedback:(BOOL)bugReportEnabled
-                  chat:(BOOL)feedbackEnabled) {
-    IBGPromptOption promptOption = IBGPromptOptionNone;
-    if (chatEnabled) {
-        promptOption |= IBGPromptOptionChat;
-    }
-    if (bugReportEnabled) {
-        promptOption |= IBGPromptOptionBug;
-    }
-    if (feedbackEnabled) {
-        promptOption |= IBGPromptOptionFeedback;
-    }
-    
-    [IBGBugReporting setPromptOptions:promptOption];
-}
-
 RCT_EXPORT_METHOD(setViewHirearchyEnabled:(BOOL)viewHirearchyEnabled) {
     IBGBugReporting.shouldCaptureViewHierarchy = viewHirearchyEnabled;
 }

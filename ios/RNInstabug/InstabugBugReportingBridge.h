@@ -31,8 +31,6 @@
 
 - (void)setOnSDKDismissedHandler:(RCTResponseSenderBlock)callBack;
 
-- (void)setPromptOptionsEnabled:(BOOL)chatEnabled feedback:(BOOL)bugReportEnabled chat:(BOOL)feedbackEnabled;
-
 - (void)setShakingThresholdForiPhone:(double)iPhoneShakingThreshold;
 
 - (void)setShakingThresholdForiPad:(double)iPadShakingThreshold;

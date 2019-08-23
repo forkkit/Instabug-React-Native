@@ -88,23 +88,6 @@ export default {
     IBGBugReporting.setOnSDKDismissedHandler(handler);
   },
 
-  /* istanbul ignore next */
-  /**
-   * @deprecated
-   * Enable/Disable prompt options when SDK invoked. When only a single option is enabled it
-   * becomes the default
-   * invocation option that SDK gets invoked with and prompt options screen will not show. When
-   * none is enabled, Bug
-   * reporting becomes the default invocation option.
-   *
-   * @param  {boolean} chat      whether Talk to us is enable or not
-   * @param  {boolean} bug       whether Report a Problem is enable or not
-   * @param  {boolean} feedback  whether General Feedback  is enable or not
-   * */
-  setPromptOptionsEnabled(chat, bug, feedback) {
-    IBGBugReporting.setPromptOptionsEnabled(chat, bug, feedback);
-  },
-
   /**
    * Sets the threshold value of the shake gesture for iPhone/iPod Touch
    * Default for iPhone is 2.5.

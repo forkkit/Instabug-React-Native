@@ -11,11 +11,6 @@ export namespace BugReporting {
   function onReportSubmitHandler(preSendingHandler: () => void): void;
   function onSDKDismissedHandler(handler: (dismiss: dismissType, report: reportType) => void): void;
   function setDidSelectPromptOptionHandler(didSelectPromptOptionHandler: () => void): void;
-  function setPromptOptionsEnabled(
-    chat: boolean,
-    bug: boolean,
-    feedback: boolean
-    ): void;
   function setShakingThresholdForiPhone(iPhoneShakingThreshold: number): void;
   function setShakingThresholdForiPad(iPadShakingThreshold: number): void;
   function setShakingThresholdForAndroid(androidThreshold: number): void;

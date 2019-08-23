@@ -290,40 +290,6 @@ public class RNInstabugBugReportingModule extends ReactContextBaseJavaModule {
     }
 
     /**
-     * @deprecated
-     * Enable/Disable prompt options when SDK invoked. When only a single option is enabled it
-     * becomes the default invocation option that SDK gets invoked with and prompt options screen
-     * will not show. When none is enabled, Bug reporting becomes the default invocation option.
-     *
-     * @param chat     weather Talk to us is enable or not
-     * @param bug      weather Report a Problem is enable or not
-     * @param feedback weather General Feedback  is enable or not
-     */
-    @ReactMethod
-    public void setPromptOptionsEnabled(boolean chat, boolean bug, boolean feedback) {
-
-        ArrayList<PromptOption> options = new ArrayList<>();
-
-        if (chat) {
-            options.add(PromptOption.CHAT);
-        }
-
-        if (feedback) {
-            options.add(PromptOption.FEEDBACK);
-        }
-
-        if (bug) {
-            options.add(PromptOption.BUG);
-        }
-
-        try {
-            BugReporting.setPromptOptionsEnabled(options.toArray(new PromptOption[0]));
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-
-    /**
      * Sets the threshold value of the shake gesture for android devices.
      * Default for android is an integer value equals 350.
      * you could increase the shaking difficulty level by

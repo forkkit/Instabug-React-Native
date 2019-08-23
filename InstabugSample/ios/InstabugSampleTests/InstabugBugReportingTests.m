@@ -107,15 +107,6 @@
   OCMVerify([partialMock sendEventWithName:@"IBGpostInvocationHandler" body:result]);
 }
 
-- (void) testgivenBooleans$setPromptOptionsEnabled_whenQuery_thenShouldCallNativeApi {
-  id mock = OCMClassMock([IBGBugReporting class]);
-  BOOL enabled = true;
-  IBGPromptOption promptOption = IBGPromptOptionNone + IBGPromptOptionChat + IBGPromptOptionBug + IBGPromptOptionFeedback;
-  OCMStub([mock setPromptOptions:promptOption]);
-  [self.instabugBridge setPromptOptionsEnabled:enabled feedback:enabled chat:enabled];
-  OCMVerify([mock setPromptOptions:promptOption]);
-}
-
 - (void) skip_testgivenDouble$setShakingThresholdForiPhone_whenQuery_thenShouldCallNativeApi {
   double threshold = 12;
   [self.instabugBridge setShakingThresholdForiPhone:threshold];
