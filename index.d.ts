@@ -133,7 +133,6 @@ export function setCrashReportingEnabled(enableCrashReporter: boolean): void;
 export function setDidSelectPromptOptionHandler(didSelectPromptOptionHandler: () => void): void;
 export function setSessionProfilerEnabled(sessionProfilerEnabled: boolean): void;
 export function getUnreadMessagesCount(messageCountCallback: () => void): void;
-export function setPushNotificationsEnabled(isPushNotificationEnabled: boolean): void;
 export function setEmailFieldRequiredForActions(
   isEmailFieldRequired: boolean,
   actionTypes: actionTypes

@@ -7,7 +7,6 @@ jest.mock('NativeModules', () => {
             setIBGLogPrintsToConsole: jest.fn(),
             didSelectPromptOptionHandler: jest.fn(),
             setSessionProfilerEnabled: jest.fn(),
-            setPushNotificationsEnabled: jest.fn(),
             setLocale: jest.fn(),
             setColorTheme: jest.fn(),
             setPrimaryColor: jest.fn(),

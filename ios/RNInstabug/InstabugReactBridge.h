@@ -32,8 +32,6 @@
 
 - (void)setSessionProfilerEnabled:(BOOL)sessionProfilerEnabled;
 
-- (void)setPushNotificationsEnabled:(BOOL)isPushNotificationEnabled;
-
 - (void)setLocale:(IBGLocale)locale;
 
 - (void)setColorTheme:(IBGColorTheme)colorTheme;
@@ -99,6 +97,5 @@
 - (void)logWarn:(NSString *)log;
 - (void)logError:(NSString *)log;
 - (void)clearLogs;
-
 
 @end

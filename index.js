@@ -161,17 +161,6 @@ const InstabugModule = {
     Instabug.getUnreadMessagesCount(messageCountCallback);
   },
 
-  /**
-   * Enables/disables the use of push notifications in the SDK.
-   * Defaults to YES.
-   * @param {boolean} isPushNotificationEnabled A boolean to indicate whether push
-   * notifications are enabled or disabled.
-   */
-  setPushNotificationsEnabled(isPushNotificationEnabled) {
-    if (Platform.OS === 'ios')
-      Instabug.setPushNotificationsEnabled(isPushNotificationEnabled);
-  },
-
   /* istanbul ignore next */
   /**
    * @deprecated use {@link BugReporting.setInvocationOptions}
