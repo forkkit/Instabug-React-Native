@@ -2,19 +2,18 @@ package com.instabug.reactlibrary;
 
 import android.os.Handler;
 import android.os.Looper;
+import android.os.SystemClock;
+import android.util.Log;
 
 import com.facebook.react.bridge.Arguments;
 import com.facebook.react.bridge.JavaOnlyArray;
 import com.facebook.react.bridge.JavaOnlyMap;
 import com.facebook.react.bridge.WritableMap;
-import com.instabug.bug.BugReporting;
-
-import android.os.SystemClock;
-
 import com.facebook.react.bridge.Callback;
 import com.facebook.react.bridge.ReadableArray;
 import com.facebook.react.bridge.WritableArray;
 import com.facebook.react.bridge.WritableNativeArray;
+import com.instabug.bug.BugReporting;
 import com.instabug.chat.Chats;
 import com.instabug.chat.Replies;
 import com.instabug.crash.CrashReporting;
@@ -25,7 +24,6 @@ import com.instabug.library.Instabug;
 import com.instabug.library.InstabugColorTheme;
 import com.instabug.library.InstabugCustomTextPlaceHolder;
 import com.instabug.library.InstabugState;
-
 import com.instabug.library.model.Report;
 import com.instabug.library.ui.onboarding.WelcomeMessage;
 import com.instabug.library.visualusersteps.State;
@@ -67,7 +65,7 @@ import static org.powermock.api.mockito.PowerMockito.verifyPrivate;
 import static org.powermock.api.mockito.PowerMockito.when;
 
 @RunWith(PowerMockRunner.class)
-@PrepareForTest({Looper.class, android.os.Handler.class, Instabug.class, BugReporting.class, CrashReporting.class, FeatureRequests.class, Chats.class, Replies.class, SystemClock.class, Surveys.class, Runnable.class, WritableNativeArray.class, JSONObject.class, RNInstabugReactnativeModule.class, Arguments.class})
+@PrepareForTest({Looper.class, android.os.Handler.class, Instabug.class, BugReporting.class, CrashReporting.class, FeatureRequests.class, Chats.class, Replies.class, SystemClock.class, Surveys.class, Runnable.class, WritableNativeArray.class, JSONObject.class, RNInstabugReactnativeModule.class, Arguments.class, Log.class})
 
 public class RNInstabugReactnativeModuleTest {
 
@@ -552,6 +550,7 @@ public class RNInstabugReactnativeModuleTest {
     public void givenString$setString_whenQuery_thenShouldCallNativeApiWithEnum() {
         // given
         PowerMockito.mockStatic(Instabug.class);
+        PowerMockito.mockStatic(Log.class);
         Map<String, Object> args = new HashMap<>();
         ArgsRegistry.registerCustomTextPlaceHolderKeysArgs(args);
         String[] keysArray = args.keySet().toArray(new String[0]);
