@@ -13,7 +13,6 @@ import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.ReadableArray;
 import com.facebook.react.bridge.WritableMap;
 import com.instabug.bug.BugReporting;
-import com.instabug.bug.PromptOption;
 import com.instabug.bug.invocation.InvocationMode;
 import com.instabug.bug.invocation.Option;
 import com.instabug.library.Feature;

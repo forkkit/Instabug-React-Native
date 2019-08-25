@@ -25,7 +25,6 @@ import com.facebook.react.uimanager.NativeViewHierarchyManager;
 import com.facebook.react.uimanager.UIBlock;
 import com.facebook.react.uimanager.UIManagerModule;
 import com.instabug.bug.BugReporting;
-import com.instabug.bug.PromptOption;
 import com.instabug.bug.instabugdisclaimer.Internal;
 import com.instabug.bug.invocation.InvocationMode;
 import com.instabug.bug.invocation.InvocationOption;
@@ -163,10 +162,6 @@ public class RNInstabugReactnativeModule extends ReactContextBaseJavaModule {
     private final String ACTION_TYPE_REPORT_BUG = "reportBugAction";
     private final String ACTION_TYPE_REQUEST_NEW_FEATURE = "requestNewFeature";
     private final String ACTION_TYPE_ADD_COMMENT_TO_FEATURE = "addCommentToFeature";
-
-    private final String PROMPT_OPTION_BUG = "promptOptionBug";
-    private final String PROMPT_OPTION_CHAT = "promptOptionChat";
-    private final String PROMPT_OPTION_FEEDBACK = "promptOptionFeedback";
 
     private final String BUG_REPORTING_REPORT_TYPE_BUG = "bugReportingReportTypeBug";
     private final String BUG_REPORTING_REPORT_TYPE_FEEDBACK = "bugReportingReportTypeFeedback";
@@ -2076,10 +2071,6 @@ public class RNInstabugReactnativeModule extends ReactContextBaseJavaModule {
         constants.put("optionEmailFieldOptional", EMAIL_FIELD_OPTIONAL);
         constants.put("optionCommentFieldRequired", COMMENT_FIELD_REQUIRED);
         constants.put("optionDisablePostSendingDialog", DISABLE_POST_SENDING_DIALOG);
-
-        constants.put("promptOptionBug", PROMPT_OPTION_BUG);
-        constants.put("promptOptionChat", PROMPT_OPTION_CHAT);
-        constants.put("promptOptionFeedback", PROMPT_OPTION_FEEDBACK);
 
         constants.put("shakeHint", SHAKE_HINT);
         constants.put("swipeHint", SWIPE_HINT);
