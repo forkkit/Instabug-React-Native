@@ -1024,23 +1024,6 @@ public class RNInstabugReactnativeModule extends ReactContextBaseJavaModule {
     }
 
     /**
-     * @deprecated
-     * Sets whether users are required to enter a comment or not when sending reports.
-     * Defaults to NO.
-     *
-     * @param isCommentFieldRequired A boolean to indicate whether comment
-     *                               field is required or not.
-     */
-    @ReactMethod
-    public void setCommentFieldRequired(boolean isCommentFieldRequired) {
-        try {
-            BugReporting.setInvocationOptions(InvocationOption.COMMENT_FIELD_REQUIRED);
-        } catch (java.lang.Exception exception) {
-            exception.printStackTrace();
-        }
-    }
-
-    /**
      * Overrides any of the strings shown in the SDK with custom ones.
      * Allows you to customize any of the strings shown to users in the SDK.
      *
@@ -1536,21 +1519,6 @@ public class RNInstabugReactnativeModule extends ReactContextBaseJavaModule {
         } catch (java.lang.Exception exception) {
             exception.printStackTrace();
         }
-    }
-
-    /**
-     * @param enabled true to show success dialog after submitting a bug report
-     */
-    @ReactMethod
-    public void setSuccessDialogEnabled(boolean enabled) {
-        if (enabled) {
-            try {
-                BugReporting.setInvocationOptions(InvocationOption.DISABLE_POST_SENDING_DIALOG);
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        }
-
     }
 
     /**

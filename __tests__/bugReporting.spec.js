@@ -64,15 +64,6 @@ describe('Testing BugReporting Module', () => {
 
   });
 
-  it('should call the native method setInvocationOptions with an array of invocationOptions', () => {
-
-    const arrayOfInvocationOptions = [BugReporting.invocationOptions.commentFieldRequired];
-    BugReporting.setInvocationOptions(arrayOfInvocationOptions);
-
-    expect(setOptions.calledOnceWithExactly(arrayOfInvocationOptions)).toBe(true);
-
-  });
-
   it('should call the native method setShakingThresholdForiPhone with a float', () => {
 
     Platform.OS = 'ios';
