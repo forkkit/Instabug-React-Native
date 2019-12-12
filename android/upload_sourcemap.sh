@@ -22,6 +22,7 @@ else
     echo "Instabug: Generating sourcemap files..."
     #Generate android sourcemap
     react-native bundle --platform android \
+    --max-workers 2 \
     --entry-file index.js \
     --dev false \
     --bundle-output ./android/main.jsbundle \

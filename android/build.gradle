@@ -11,6 +11,7 @@ android {
 
     defaultConfig {
         minSdkVersion 16
+        multiDexEnabled true //important
         targetSdkVersion rootProject.hasProperty('targetSdkVersion') ? rootProject.targetSdkVersion : DEFAULT_TARGET_SDK_VERSION
         versionCode 1
         versionName "1.0"
@@ -27,6 +28,7 @@ android {
 
 dependencies {
     implementation 'com.facebook.react:react-native:+'
+    implementation 'com.android.support:multidex:2.0.1'
     api('com.instabug.library:instabug:8.7.2.0') {
         exclude group: 'com.android.support:appcompat-v7'
     }
